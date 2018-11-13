@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirm yoy verifier
+{% endblock %}
+
+
+<p> A verifier will need to review your emissions before you can surrender allowance. This needs to be the same verifier as the one who verfied your emissions report.
+
+</p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="name">
+    Verifier name
+  </label>
+  <input class="govuk-input" id="name" name="name" type="text">
+</div>
+
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+
+{% endblock %}

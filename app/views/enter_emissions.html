@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Enter your emissions
+{% endblock %}
+
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+    <h1 class="govuk-fieldset__heading">
+      Enter your emissions
+    </h1>
+  </legend>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="emission-1">
+      CO2
+      <span class="govuk-visually-hidden">line 1 of 2</span>
+    </label>
+    <input class="govuk-input" id="emission-1" name="emission1" type="text">
+  </div>
+
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="emission-2">
+      PFC
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="emission2" name="emission-2" type="text">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="emission-3">
+      N2O
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="emission3" name="emission-3" type="text">
+  </div>
+
+
+</fieldset>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirm your emissions
+{% endblock %}
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Confirm your emissions</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">GHG</th>
+      <th class="govuk-table__header" scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">C02</th>
+      <td class="govuk-table__cell">...</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">PFC</th>
+      <td class="govuk-table__cell">...</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">N20</th>
+      <td class="govuk-table__cell">...</td>
+    </tr>
+  </tbody>
+</table>
+
+<button type="submit" class="govuk-button">
+  Submit emissions data
+</button>
+
+{% endblock %}

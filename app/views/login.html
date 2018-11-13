@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Log in
+{% endblock %}
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Email address
+  </label>
+
+  <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
+</div>
+
+
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/email">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Your password
+      </h1>
+
+
+      <form class="form" action="/2fa" method="post">
+
+        {% from "input/macro.njk" import govukInput %}
+
+        {{ govukInput({
+          label: {
+            text: "What's your password?"
+          },
+          hint: {
+            text: "It looks like you already have an account."
+          },
+          id: "email",
+          name: "email",
+          type: "email"
+        }) }}
+
+        <p class="govuk-body">You can <a href='#' class='govuk-link'>reset your password</a> if you don't remember it.</p>
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+
+{% endblock %}
